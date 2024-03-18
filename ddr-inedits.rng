@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xml:lang="fr"
+  xmlns="http://relaxng.org/ns/structure/1.0" 
+  
+  ns="http://www.tei-c.org/ns/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+  >
+  <include href="../teinte/teinte.rng">
+    <start>
+      <element name="TEI">
+        <ref name="xml.id"/>
+        <ref name="xml.lang"/>
+        <ref name="teiHeader"/>
+        <element name="text">
+          <element name="body">
+            <oneOrMore>
+              <element name="div">
+              <attribute name="xml:id">
+                <data type="ID">
+                  <param name="pattern">ddr\d+[a-z]+(_\w+)?</param>
+                </data>
+              </attribute>
+                <ref name="att.when"/>
+                <attribute name="type">
+                  <value>article</value>
+                </attribute>
+                <ref name="pb"/>
+                <ref name="article.head"/>
+                <zeroOrMore>
+                  <ref name="opener"/>
+                </zeroOrMore>
+                <zeroOrMore>
+                  <choice>
+                    <ref name="block"/>
+                    <ref name="point"/>
+                  </choice>
+                </zeroOrMore>
+                <zeroOrMore>
+                  <choice>
+                    <ref name="div"/>
+                    <ref name="pb"/>
+                  </choice>
+                </zeroOrMore>
+              </element>
+            </oneOrMore>
+          </element>
+        </element>
+      </element>
+    </start>
+    <define name="pb">
+      <element name="pb">
+        <ref name="att.facs"/>
+        <ref name="att.n"/>
+      </element>
+    </define>
+    <define name="encodingDesc">
+      <element name="encodingDesc">
+        <element name="refsDecl">
+          <element name="citeStructure">
+            <attribute name="unit">
+              <value>article</value>
+            </attribute>
+            <attribute name="match">
+              <value>//div[@type='article']</value>
+            </attribute>
+            <attribute name="use">
+              <value>@xml:id</value>
+            </attribute>
+          </element>
+        </element>
+      </element>
+    </define>
+  </include>
+  <define name="article.head">
+    <element name="head">
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="date"/>
+          <ref name="emph"/>
+          <ref name="hi"/>
+          <ref name="lb"/>
+          <ref name="num"/>
+          <ref name="ref"/>
+          <ref name="indexable"/>
+        </choice>
+      </oneOrMore>
+      <oneOrMore>
+        <ref name="note"/>
+      </oneOrMore>
+    </element>
+  </define>
+</grammar>
