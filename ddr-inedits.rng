@@ -5,7 +5,7 @@
   ns="http://www.tei-c.org/ns/1.0"
   datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
   >
-  <include href="../teinte/teinte.rng">
+  <include href="http://oeuvres.github.io/teinte/teinte.rng">
     <start>
       <element name="TEI">
         <ref name="xml.id"/>
