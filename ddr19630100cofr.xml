@@ -46,7 +46,7 @@
 	</monogr>
 	<note type="tags"><term type="tag">Livre</term></note>
 </biblStruct>
-        <bibl type="APA7"><hi rend="sc">Rougemont</hi> Denis de, <hi><ref target="https://www.unige.ch/rougemont/livres/ddr19630100cofr">The Christian Opportunity</ref></hi>, trad. <hi rend="sc">Lehmkuhl</hi> Donald, New York, Holt, Rinehart and Winston, 1963, 207 p.</bibl>
+        <bibl type="zotero"><hi rend="sc">Rougemont</hi> Denis de, <hi><ref target="https://www.unige.ch/rougemont/livres/ddr19630100cofr">The Christian Opportunity</ref></hi>, trad. <hi rend="sc">Lehmkuhl</hi> Donald, New York, Holt, Rinehart and Winston, 1963, 207 p.</bibl>
       </sourceDesc>
     </fileDesc>
     <profileDesc>
@@ -57,11 +57,7 @@
         <language ident="fr"/>
       </langUsage>
     </profileDesc>
-  
-  
-  
-  
-  <xenoData type="CSL"><![CDATA[
+    <xenoData type="CSL"><![CDATA[
 {
     "type": "book",
     "call-number": "ddr19630100cofr",

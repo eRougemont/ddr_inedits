@@ -2,7 +2,7 @@
 <?xml-model href="ddr-inedits.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-stylesheet type="text/css" href="http://oeuvres.github.io/teinte/author-tei.css"?>
 <?xml-stylesheet type="text/xsl" href="https://oeuvres.github.io/teinte_xsl/tei_html.xsl"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr" xml:id="ddr-inedits-1936-1947">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr" xml:id="ddr-tap-1936-1947">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -19,7 +19,7 @@
         </availability>
       </publicationStmt>
       <sourceDesc>
-        <bibl>{bibl}</bibl>
+        <bibl/>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
